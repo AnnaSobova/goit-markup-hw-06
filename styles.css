@@ -877,16 +877,19 @@ img {
   color: var(--light-dark-text-color);
 }
 
-.contact-form-checkbox-label::before {
+.checkbox-label-icon {
   display: inline-block;
   width: 15px;
   height: 15px;
-  border: 1px solid #555555;
+  border: 1px solid #ffffff;
   cursor: pointer;
   content: '';
   margin-right: 10px;
+  opacity: 1;
 }
-
+.checkbox-label-icon:checked {
+  opacity: 0;
+}
 .condition {
   font-family: var(--primary-font-family);
   font-weight: 400;
@@ -896,12 +899,12 @@ img {
   color: var(--accent-color);
 }
 
-.contact-form-checkbox:focus + .contact-form-checkbox-label::before {
+.contact-form-checkbox:focus + .contact-form-checkbox-label.icon-check {
   outline: 1px solid rgba(0, 0, 255, 0.5);
 }
 
-.contact-form-checkbox:checked + .contact-form-checkbox-label::before {
-  background-image: url(./img/icon\ check.jpg);
+.contact-form-checkbox:checked + .icon-check-tickbox {
+  opacity: 1;
 }
 
 .contact-form-submit-btn {
@@ -954,7 +957,15 @@ img {
 .icon-check {
   position: absolute;
   border: 1px;
-  transform: translateY(30%);
+  left: 0;
+  transform: translate(0, -5%);
   cursor: pointer;
 }
+.icon-check-tickbox {
+  fill: #ffffff;
+  background-color: var(--accent-color);
+  border-radius: 1px solid var(--accent-color);
+  opacity: 0;
+}
+.
 /* etemp */
