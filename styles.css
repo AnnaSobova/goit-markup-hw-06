@@ -963,19 +963,21 @@ img {
   position: absolute;
   display: inline-block;
   border: 1px;
-  left: 0;
+  width: 16px;
+  height: 16px;
   cursor: pointer;
   opacity: 1;
   margin-right: 10px;
-  transform: translate(-10, -50%);
 }
 
 .icon-check-tickbox {
+  position: absolute;
   fill: #ffffff;
   background-color: var(--accent-color);
   border-radius: 1px solid var(--accent-color);
   border-radius: 2px;
   opacity: 0;
+  transform: translate(-10, -50%);
 }
 .contact-form-checkbox:checked + .contact-form-checkbox-label .icon-check-tickbox {
   opacity: 1;
