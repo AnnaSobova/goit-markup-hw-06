@@ -885,11 +885,8 @@ img {
   cursor: pointer;
   content: '';
   margin-right: 10px;
-  opacity: 1;
 }
-.checkbox-label-icon:checked {
-  opacity: 0;
-}
+
 .condition {
   font-family: var(--primary-font-family);
   font-weight: 400;
@@ -899,12 +896,8 @@ img {
   color: var(--accent-color);
 }
 
-.contact-form-checkbox:focus + .contact-form-checkbox-label.icon-check {
+.contact-form-checkbox:focus + .checkbox-label-icon.icon-check:checked {
   outline: 1px solid rgba(0, 0, 255, 0.5);
-}
-
-.contact-form-checkbox:checked + .icon-check-tickbox {
-  opacity: 1;
 }
 
 .contact-form-submit-btn {
@@ -958,14 +951,34 @@ img {
   position: absolute;
   border: 1px;
   left: 0;
-  transform: translate(0, -5%);
+  transform: translate(-10, -50%);
   cursor: pointer;
+  opacity: 1;
 }
+
+.contact-form-checkbox:checked + .contact-form-checkbox-label .icon-check {
+  opacity: 0;
+}
+.icon-blue-checkbox {
+  position: absolute;
+  /* display: inline-block; */
+  border: 1px;
+  left: 0;
+  transform: translate(-10, -50%);
+  cursor: pointer;
+  opacity: 1;
+  /* content: ''; */
+  margin-right: 10px;
+}
+
 .icon-check-tickbox {
   fill: #ffffff;
   background-color: var(--accent-color);
   border-radius: 1px solid var(--accent-color);
+  border-radius: 2px;
   opacity: 0;
 }
-.
+.contact-form-checkbox:checked + .contact-form-checkbox-label .icon-check-tickbox {
+  opacity: 1;
+}
 /* etemp */
