@@ -321,14 +321,14 @@ img {
 }
 
 .process-work-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-
   background-color: rgba(47, 48, 58, 0.8);
   width: 100%;
   height: 70px;
   bottom: 0;
-  text-align: center;
-  padding-top: 26px;
 }
 .team {
   background-color: #f5f4fa;
@@ -629,7 +629,9 @@ img {
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
 }
-
+.join {
+  flex-grow: 1;
+}
 .join-name {
   font-family: var(--primary-font-family);
 
@@ -677,10 +679,6 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-info {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-
   margin-left: 70px;
 }
 .footer-section {
@@ -749,7 +747,6 @@ img {
   display: block;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 .footer-contact-form {
   margin-left: 92px;
@@ -774,9 +771,11 @@ img {
   margin-right: 12px;
 }
 .icon-button {
-  position: relative;
+  display: inline-flex;
+  align-items: center;
+
   min-width: 200px;
-  padding: 10px 62px 10px 26px;
+  padding: 10px 26px;
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   font-family: var(--primary-font-family);
@@ -789,9 +788,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fly-send-icon {
-  position: absolute;
   fill: #ffffff;
-  transform: translate(10px, 2px);
+  margin-left: 10px;
 }
 /*modal btn start*/
 .contact-form-field {
@@ -802,7 +800,7 @@ img {
 .contact-form-input-wrapper {
   position: relative;
   display: block;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 .contact-form-input {
@@ -836,6 +834,7 @@ img {
 }
 
 .contact-form-message {
+  display: block;
   width: 100%;
   height: 100px;
   margin-top: 6px;
@@ -862,12 +861,13 @@ img {
 }
 
 .contact-form-checkbox-wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   position: relative;
 }
 
 .contact-form-checkbox-label {
   display: flex;
+
   align-items: center;
   font-family: var(--primary-font-family);
   font-weight: 400;
